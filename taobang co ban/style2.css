@@ -1,0 +1,14 @@
+.box{
+    border-collapse: collapse;
+}
+.tb1{
+    border:1px solid white;
+}
+.tb2{
+    border-collapse: collapse;
+    border: 1px solid black;
+}
+.tb2, tr,td{
+    border: 1px solid black;
+    padding: 8px;
+}
