@@ -11,5 +11,6 @@
     padding-right: 3px;
     padding-left: 3px;
 }
-
-
+.box2 th{
+    text-align:left ;
+}
