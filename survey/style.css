@@ -1,0 +1,15 @@
+
+.box2{
+    border-collapse: collapse;
+}
+.box2 tr:nth-child(odd){
+    background-color: #c7c3c3;
+}
+.box2 td, th{
+    border: 1px solid black;
+    text-align: center;
+    padding-right: 3px;
+    padding-left: 3px;
+}
+
+
