@@ -15,5 +15,4 @@ function doitien() {
     }
 
     document.getElementById("Result").innerText = Result
-
 }
