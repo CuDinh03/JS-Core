@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+ let n = parseInt(prompt("nhap so n:"));
+ function check(n){
+   let flag = 0;
+   let countNum = 0;
+   for(let num = 2; num<=n;num++){
+     if(countNum<n) {
+       for (let i = 2; i <=Math.sqrt(num); i++) {
+         if (num % i === 0) {
+           flag += 1;
+           break;
+         }
+       }if(flag===0) {
+         document.write(num+"<br/>");
+         countNum+=1;
+       }
+       flag = 0;
+     }else {
+        break;
+     }
+   }
+ }
+ check(n);
+</script>
+</body>
+</html>

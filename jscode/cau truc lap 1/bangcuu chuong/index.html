@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+</html>
+<script>
+    let text, i, j;
+    text = "<table border='1' width='300' cellspacing='0' cellpadding='10'>";
+    for(i=2;i <= 9;i++) {
+        text = text + "<tr>";
+        for (j=1;j <= 9;j++) {
+            text = text + "<td>"+ i + "*"+ j + "=" + i * j  +  "</td>";
+        }
+        text = text + "</tr>";
+    }
+    text = text + "</table>";
+    document.write(text);
+</script>
