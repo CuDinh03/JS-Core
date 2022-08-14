@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+<script>
+  const number = parseInt(prompt('Enter the number of terms: '));
+  let n1 = 0, n2 = 1, nextTerm, sum=0;
+
+  document.write('Fibonacci: '+ "<br/>");
+
+  for (let i = 1; i <= number; i++) {
+    sum= sum+n1;
+    document.write(n1+"<br/>");
+    nextTerm = n1 + n2;
+    n1 = n2;
+    n2 = nextTerm;
+
+
+  }
+  document.write("tong 20 so dau tien cua day fibonaci: " + sum);
+</script>
+</html>
