@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input id="name" type="text" placeholder="nhap tu can tim"/>
+<button type="button" id="traCuu" onclick="traCuu()">Tra Cuu</button>
+<p id="ketqua"></p>
+</body>
+</html>
+<script>
+    let a = ['apple','server','tea','cup'];
+    let b = ['táo','se vờ','trà','cốc'];
+    let flag =0;
+    let ketQua = '';
+  function traCuu() {
+      let tu = document.getElementById('name').value;
+
+      for (let i = 0; i < a.length; i++) {
+          if (tu == a[i]) {
+              for (let j = 0; j < b.length; j++) {
+                  if (i === j) {
+                      ketQua += b[j];
+                      flag += 1;
+                      break;
+                  }
+              }
+          }
+      }
+
+      if (flag === 1) {
+          document.getElementById('ketqua').innerText = 'Tu nay sang tieng viet la: ' + ketQua;
+      } else {
+          document.getElementById('ketqua').innerText = 'khong tim thay';
+      }
+  }
+</script>
