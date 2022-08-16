@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Faking Textarea on Typing</title>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+
+</head>
+<body>
+<center>
+  <h2>Type anthing slowly</h2>
+  <form name="f">
+    <textarea name="txt" cols="70" rows="10" onkeydown="typeTextarea();"></textarea>
+  </form>
+</center>
+</body>
+</html>
+<script>
+  let a=new Array(),n="";
+  a[1]='Ô';a[2]='I';a[3]=' ';a[4]='B';a[5]='Ạ';a[6]='N';a[7]=' ';
+  a[8]=' Ơ';a[9]='I';a[10]=' ';a[11]='B';a[12]='Ạ';a[13]='N';a[14]=' ';
+  a[15]='Y';a[16]='Ế';a[17]='U';a[18]=' ';a[19]='L';a[20]='À';a[21]=' ';
+  a[22]='D';a[23]='O';a[24]=' ';a[25]='B';a[26]='Ạ';a[27]='N';a[28]=' ';
+  a[29]='K';a[30]='H';a[31]='Ô';a[32]='N';a[33]='G';a[34]=' ';
+  a[35]='C';a[36]='H';a[37]='Ơ';a[38]='I';a[39]=' ';a[40]='Đ';a[41]='Ồ';a[42]=' ';
+  a[43]='Đ';a[44]='Ấ';a[45]='Y';a[46]='!!! ';
+  function typeTextarea(){
+    t = document.f.txt.value;
+    j = t.length;
+    if(j > 0)
+    {
+      for(let i=1; i<=j; i++)
+      {
+        n = n + a[i];
+        if(i === 46)
+        {
+          document.f.txt.value = "";
+          n = "";
+        }
+      }
+    }
+    document.f.txt. value = n;
+    n="";
+    setTimeout("typeTextarea()", 1);
+  }
+</script>
