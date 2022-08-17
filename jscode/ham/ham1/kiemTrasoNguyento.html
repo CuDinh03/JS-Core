@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+</html>
+<script>
+  let flag =0;
+  function kiemTraso(n){
+    if(n<0){
+      alert('day khong phai so nguyen');
+    }
+  }
+  function timSont(n){
+    if (n<2){
+      alert('day khong phai so nguyen to');
+    }else {
+      for(let i = 2; i<= Math.sqrt(n);i++){
+        if(n%i===0){
+          flag +=1;
+          break;
+        }
+      }
+    }
+    return flag;
+  }
+
+  function soNt(){
+    if (flag === 0){
+      alert('so nguyen to');
+    }else {
+      alert('khong la so nguyen to');
+    }
+  }
+  let n = +prompt("nhap so: ");
+  kiemTraso(n);
+  timSont(n);
+  soNt();
+</script>
