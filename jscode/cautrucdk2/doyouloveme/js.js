@@ -1,9 +1,9 @@
 function yeuHayKo(choice){
-    if(choice== 'Yes') {
-        alert('Có yêu thật không mà ấn');
+    if(choice== 'Khum') {
+        alert('Không dỗi là yêu rồi =)))');
 
     }else{
-        alert('Thôi tắt văn đi.')
+        alert('Em rẩt ngoan')
     }
 }
 

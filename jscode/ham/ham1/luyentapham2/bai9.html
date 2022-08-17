@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+</html>
+<script>
+  let arr = [];
+  let n = prompt('nhap ky tu');
+  let count =0;
+  function nhapMang(){
+    for (let i = 0; i<9; i++){
+      arr[i] = prompt("nhap phan tu o vi tri" + i + ' :');
+    }
+    console.log(arr);
+  }
+  function tim(n){
+    for (let j =0; j<arr.length;j++) {
+      if (n.indexOf(arr) !== -1) {
+            count+=1;
+      }
+    }
+    if (count>0){
+      return count;
+    }else {
+      return -1;
+    }
+  }
+  nhapMang();
+  console.log(tim(n));
+</script>

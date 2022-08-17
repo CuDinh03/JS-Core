@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+</html>
+<script>
+
+  let arr =[];
+  let n = +prompt("so phan tu trong mang:");
+  function nhapMang(n) {
+    for (let i = 0; i <= n; i++) {
+      arr[i] = +prompt('nhap gia tri phan tu thu ' + i + " : ");
+      if (arr.length==n){
+        break;
+      }
+    }
+  }
+  nhapMang(n);
+  console.log(arr.reverse());
+
+
+</script>
