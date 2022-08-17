@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="text" id="nhap"/>
+<button onclick="find()">Tim</button>
+<p id="nameStar"></p>
+
+</body>
+</html>
+<script>
+  let flag = 0;
+  let ketQua = '';
+  let arr1 = ['Polaris', 'Aldebaran', 'Deneb', 'Vega', 'Altair', 'Dubhe', 'Regulus'];
+  let arr2 = ['Ursa Minor', 'Tarurus', 'Cygnus', 'Lyra', 'Aquila', 'Ursa Major', 'Leo'];
+  function find(star){
+  let sao = document.getElementById('nhap').value;
+  for( let i = 0; i<arr1.length;i++){
+    if(sao === arr1[i]){
+      for (let j =0; j<arr2.length;j++){
+        if(j===i){
+          ketQua+=arr2[j];
+          flag +=1;
+          break;
+        }
+      }
+    }
+  }
+
+    if (flag === 0) {
+      document.getElementById('nameStar').innerText = 'khong tim thay';
+    } else {
+      document.getElementById('nameStar').innerText = ketQua;
+
+    }
+  }
+
+
+
+</script>
