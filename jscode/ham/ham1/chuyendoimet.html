@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<label><input id="met" type="number"  style="width: 200px" /></label><br/>
+<button onclick="meterToFoot()">Chuyen</button><br/>
+<p id="metsangfit"></p><br/>
+
+<label><input id="fit"  type="number"  style="width: 200px"/></label><br/>
+<button onclick="footToMeter()">Chuyen</button><br/>
+<p id="fitsangmet"></p><br/>
+
+</body>
+</html>
+
+<script>
+  function footToMeter(){
+      let foot = document.getElementById('fit').value;
+    meter = 0.305 * foot;
+    console.log(meter);
+    document.getElementById('fitsangmet').innerText = meter;
+  }
+
+  function meterToFoot(){
+      let meter = document.getElementById('met').value;
+    foot = 3.279 * meter;
+    console.log(foot);
+    document.getElementById('metsangfit').innerText = foot;
+  }
+</script>
+
