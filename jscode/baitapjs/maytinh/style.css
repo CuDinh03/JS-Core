@@ -1,7 +1,35 @@
-td{
-    width: 50px;
+.boxhienthi{
+    width: 355px;
+    height: 30px;
+    border: 1px solid #b4b4b4;
 }
-
 table{
     border-collapse: collapse;
+}
+button{
+    width: 50px;
+    height: 30px;
+
+}
+.box{
+    background: white;
+    width: 360px;
+    padding: 30px 20px 20px 20px;
+    border: 1px solid #b4b4b4;
+}
+.so{
+    background: #e9ebec;
+    border: none;
+}
+table{
+    border: none;
+}
+.cnn{
+    border: none;
+    background: #c6c6c9;
+}
+.cnn1{
+    border: none;
+    background: dodgerblue;
+    color: white;
 }

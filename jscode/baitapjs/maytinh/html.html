@@ -9,56 +9,56 @@
 <div class="box">
 <table>
   <tr>
-    <input type="text" id="Amount" placeholder="0" size="50px"/>
+    <input class="boxhienthi" type="text" id="hienThi" placeholder="0" />
   </tr>
   <tr>
-    <td><button type="button" id="rad">Rad</button></td>
+    <td><button type="button" id="rad" value="Rad" class="cnn" onclick="chucNang('Rad')">Rad</button></td>
     <td></td>
-    <td><button type="button" id="giaiThua">x!</button>
+    <td><button type="button" id="giaiThua" value="x!" class="cnn" onclick="chucNang('x!')">x!</button>
     </td>
-    <td><button type="button" id="ngoacTrai">(</button> </td>
-    <td><button type="button" id="ngoacPhai">)</button> </td>
-    <td><button type="button" id="phanTram">%</button></td>
-    <td><button type="button" id="xoa">AC</button> </td>
+    <td><button type="button" id="ngoacTrai" value="(" class="cnn" onclick="phimSo('(')">(</button> </td>
+    <td><button type="button" id="ngoacPhai" value=")" class="cnn" onclick="phimSo(')')">)</button> </td>
+    <td><button type="button" id="phanTram" value="%"  class="cnn" onclick="chucNang('%')">%</button></td>
+    <td><button type="button" id="xoa" value="AC" class="cnn" onclick="xoa()">AC</button> </td>
   </tr>
   <tr>
-    <td><button type="button" id="lnv">Lnv</button></td>
-    <td><button type="button" id="sin">sin</button></td>
-    <td><button type="button" id="ln">Ln</button></td>
-    <td><button type="button" id="number7">7</button></td>
-    <td><button type="button" id="number8">8</button></td>
-    <td><button type="button" id="number9">9</button></td>
-    <td><button type="button" id="chia">÷</button></td>
+    <td><button type="button" id="lnv" class="cnn" onclick="chucNang('Lnv')">Lnv</button></td>
+    <td><button type="button" id="sin" class="cnn" onclick="chucNang('sin')">sin</button></td>
+    <td><button type="button" id="ln" class="cnn" onclick="chucNang('Ln')">Ln</button></td>
+    <td><button type="button" id="number7"  class="so" onclick="phimSo(7)">7</button></td>
+    <td><button type="button" id="number8" class="so" onclick="phimSo(8)">8</button></td>
+    <td><button type="button" id="number9" class="so" onclick="phimSo(9)">9</button></td>
+    <td><button type="button" id="chia" class="cnn" onclick="chucNang('/')">÷</button></td>
   </tr>
   <tr>
-    <td><button type="button" id="pi">π</button></td>
-    <td><button type="button" id="cos">cos</button></td>
-    <td><button type="button" id="log">log</button></td>
-    <td><button type="button" id="number4">4</button></td>
-    <td><button type="button" id="number5">5</button></td>
-    <td><button type="button" id="number6">6</button></td>
-    <td><button type="button" id="nhan">x</button></td>
+    <td><button type="button" id="pi" class="cnn" onclick="chucNang('pi')">π</button></td>
+    <td><button type="button" id="cos" class="cnn" onclick="chucNang('cos')">cos</button></td>
+    <td><button type="button" id="log" class="cnn" onclick="chucNang('log')">log</button></td>
+    <td><button type="button" id="number4" class="so" onclick="phimSo(4)">4</button></td>
+    <td><button type="button" id="number5" class="so" onclick="phimSo(5)">5</button></td>
+    <td><button type="button" id="number6" class="so" onclick="phimSo(6)">6</button></td>
+    <td><button type="button" id="nhan" class="cnn" onclick="chucNang('*')">x</button></td>
   </tr>
   <tr>
-    <td><button type="button" id="loga">e</button></td>
-    <td><button type="button" id="tan">tan</button></td>
-    <td><button type="button" id="can">√</button></td>
-    <td><button type="button" id="number1">1</button></td>
-    <td><button type="button" id="number2">2</button></td>
-    <td><button type="button" id="number3">3</button></td>
-    <td><button type="button" id="tru">-</button></td>
+    <td><button type="button" id="loga" class="cnn" onclick="chucNang('e')">e</button></td>
+    <td><button type="button" id="tan" class="cnn" onclick="chucNang('tan')">tan</button></td>
+    <td><button type="button" id="can" class="cnn" onclick="chucNang('can')">√</button></td>
+    <td><button type="button" id="number1" class="so" onclick="phimSo(1)">1</button></td>
+    <td><button type="button" id="number2" class="so" onclick="phimSo(2)">2</button></td>
+    <td><button type="button" id="number3" class="so" onclick="phimSo(3)">3</button></td>
+    <td><button type="button" id="tru" class="cnn" onclick="chucNang('-')">-</button></td>
   </tr>
   <tr>
-    <td><button type="button" id="ans">Ans</button></td>
-    <td><button type="button" id="exp">EXP</button></td>
-    <td><button type="button" id="luyThua">x<sup>y</sup></button></td>
-    <td><button type="button" id="number">0</button></td>
-    <td><button type="button" id="cham">.</button></td>
-    <td><button onclick="phepTinh()" >=</button></td>
-    <td><button type="button" id="plus">+</button></td>
+    <td><button type="button" id="ans" class="cnn" onclick="chucNang('Ans')">Ans</button></td>
+    <td><button type="button" id="exp" class="cnn" onclick="chucNang('EXP')">EXP</button></td>
+    <td><button type="button" id="luyThua" class="cnn" onclick="chucNang('luyThua')">x<sup>y</sup></button></td>
+    <td><button type="button" id="number"  class="so" onclick="phimSo(0)">0</button></td>
+    <td><button type="button" id="cham" class="so" onclick="phimSo('.')">.</button></td>
+    <td><button onclick="ketQua()" class="cnn1" >=</button></td>
+    <td><button type="button" id="plus" class="cnn" onclick="chucNang('+')">+</button></td>
   </tr>
 </table>
 </div>
+<script src="js.js"></script>
 </body>
 </html>
-<script src="js.js"></script>
