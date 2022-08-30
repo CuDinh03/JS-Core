@@ -8,12 +8,20 @@
 /*}*/
 /**{
 /**!*/
-
+body{
+    background-image: url("backgr.jpeg") ;
+}
 .game{
-    border: none;
+    border: 5px solid #2e6e67 ;
     height: 570px;
-    width: 420px;
-    background: #c7c3c3;
+    width: 360px;
+    margin-left: 900px;
+    margin-top: 50px;
+
+}
+
+#block{
+    background: #3d8880;
 }
 
 

@@ -539,7 +539,7 @@ document.addEventListener('DOMContentLoaded', () => {
 })
 newGame = new Game();
 
-
+// screen xuat hien block
 // let canvasScreen = document.getElementById('screen');
 // let cstx = canvasScreen.getContext("2d");
 //
